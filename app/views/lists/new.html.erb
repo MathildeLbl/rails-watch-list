@@ -1,0 +1,8 @@
+<h1>Create List</h1>
+
+<%= simple_form_for (@list) do |f| %>
+<%= f.input :name %>
+<%= f.association :bookmarks %>
+<%= f.association :movies %>
+<%= f.submit "New List", class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,13 @@
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <%= link_to "New list", new_list_path, class: "ms-auto text-white" %>
+  </div>
+</nav>
+
+<div class="container">
+  <img src="https://unsplash.com/fr/photos/red-cinema-chair-evlkOfkQ5rE" class="img-fluid" alt="...">
+</div>
+
+<% @lists.each do |list| %>
+<%= link_to list.name, list_path(list) %>
+<% end %>

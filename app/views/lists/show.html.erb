@@ -1,0 +1,16 @@
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <%= link_to "New bookmark", new_list_bookmark_path(@list), class: "ms-auto text-white" %>
+  </div>
+</nav>
+
+<div class="container">
+  <h1> <%= @list.name %> </h1>
+
+  <div class="movie-picture">
+    <h2>Movie picture</h2>
+  </div>
+  <div class="bookmark">
+    <h2>Bookmark Content</h2>
+  </div>
+</div>
